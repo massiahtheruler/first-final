@@ -31,6 +31,7 @@
                 </button>
             </div>
         </nav>
+        <div class="menu"></div>
         <div class="modal">
             <button class="btn__menu btn__menu--close" onclick="closeMenu()">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -40,7 +41,7 @@
                     <line x1="6" y1="6" x2="18" y2="18"></line>
                 </svg>
             </button>
-            <div class="modal__links">
+            <!--<div class="modal__links">
                 <a class="modal__link" href="#features">Features</a>
                 <a class="modal__link" href="#steps">Steps</a>
                 <a class="modal__link" href="#pricing">Pricing</a>
@@ -48,7 +49,29 @@
                 <a class="modal__link" href="#">Login</a>
                 <a class="modal__link modal__link--primary" href="#start">Sign Up</a>
                 <a class="modal__link" href="#features"></a>
-            </div>
+            </div>-->
+            <div class="menu__backdrop">
+                    <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                        <i class="fa-solid fa-times"style="color: #ffff"></i>
+                    </button>
+                <ul class="menu__links">
+                    <li class="menu__list">
+                        <a href="#features" class="menu__link" onclick="closeMenu()">Features</a>
+                    </li>
+                    <li class="menu__list">
+                        <a href="#steps" class="menu__link" onclick="closeMenu()">Steps</a>
+                    </li>
+                    <li class="menu__list">
+                        <a href="pricing" onclick="closeMenu()">Pricing</a>
+                    </li>
+                    <li class="menu__list">
+                        <a href="testimonials" onclick="closeMenu()">Testimonials</a>
+                    </li>
+                    <li class="menu__list">
+                        <a class="menu__link no cursor" onclick="closeMenu()">Sign Up</a>
+                    </li>
+                    </ul>
+                </div>
         </div>
         <header>
             <div class="container">
