@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <div class="row"></div>
+    <div class="row">
     <section id="landing">
         <nav>
             <div class="row nav__row">
@@ -31,16 +31,7 @@
                 </button>
             </div>
         </nav>
-        <div class="menu"></div>
-        <div class="modal">
-            <button class="btn__menu btn__menu--close" onclick="closeMenu()">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    class="light___StyledCloseIcon-lj69nl-14 fASujC">
-                    <line x1="18" y1="6" x2="6" y2="18"></line>
-                    <line x1="6" y1="6" x2="18" y2="18"></line>
-                </svg>
-            </button>
+        <div class="modal__menu">
             <!--<div class="modal__links">
                 <a class="modal__link" href="#features">Features</a>
                 <a class="modal__link" href="#steps">Steps</a>
@@ -50,24 +41,26 @@
                 <a class="modal__link modal__link--primary" href="#start">Sign Up</a>
                 <a class="modal__link" href="#features"></a>
             </div>-->
+
             <div class="menu__backdrop">
+              
                     <button class="btn__menu btn__menu--close" onclick="closeMenu()">
-                        <i class="fa-solid fa-times"style="color: #ffff"></i>
+                        <i class="fa-solid fa-times"style= color: #000></i>
                     </button>
                 <ul class="menu__links">
-                    <li class="menu__list">
+                    <li class="menu__link">
                         <a href="#features" class="menu__link" onclick="closeMenu()">Features</a>
                     </li>
-                    <li class="menu__list">
+                    <li class="menu__link">
                         <a href="#steps" class="menu__link" onclick="closeMenu()">Steps</a>
                     </li>
-                    <li class="menu__list">
-                        <a href="pricing" onclick="closeMenu()">Pricing</a>
+                    <li class="menu__link">
+                        <a href="#pricing" onclick="closeMenu()">Pricing</a>
                     </li>
-                    <li class="menu__list">
+                    <li class="menu__link">
                         <a href="testimonials" onclick="closeMenu()">Testimonials</a>
                     </li>
-                    <li class="menu__list">
+                    <li class="menu__link">
                         <a class="menu__link no cursor" onclick="closeMenu()">Sign Up</a>
                     </li>
                     </ul>

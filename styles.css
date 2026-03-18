@@ -218,8 +218,14 @@ nav {
 }
 
 .btn__menu {
+    transition:all ease;
     position: absolute;
     right: 20px;
+}
+.btn__menu--close {
+    position: fixed;
+    top: 24px;
+    right: 18px;
 }
 
 .modal {
@@ -1242,7 +1248,63 @@ a::before {
     transition: all 300ms ease;
 }
 
-.menu {
+.menu__backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    background-color: darkorchid .8;
+    border: 1px solid rgb(229, 231, 235);
+    border-radius: 8px;
+    z-index: 100;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.menu--open .modal__menu {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.menu__links {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+
+
+.menu__link {
+    color: rgb(118, 77, 242);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin: 8px 0;
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+}
+
+.btn__menu--close {
+    position: absolute;
+    top: 20px;
+    right:20px;
+    z-index: 101;
+    
+}
+
+/*.menu__link--primary {
+    color: #f7fafc;
+    padding: 12px 32px;
+    background: #6415ff;
+    border-radius: 500px;
+    border: none;
+}*/
+
+.modal__menu {
     position: fixed;
     top: 0;
     left: 0;
@@ -1260,38 +1322,23 @@ a::before {
     transition: all 300ms ease;
 }
 
-.menu--open .menu {
-    visibility: visible;
-    opacity: 1;
-    transform: translateX(0);
-}
+@media (max-width: 1085px) {
 
-.menu__links {
+
+
+header {
     width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
-.menu__link {
-    color: #1a202c;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 1.5;
-    margin: 8px 0;
-    padding-bottom: 4px;
-    border-bottom: 2px solid transparent;
+
+#features {
+width: 100%;
 }
 
-.menu__link--primary {
-    color: #f7fafc;
-    padding: 12px 32px;
-    background: #6415ff;
-    border-radius: 500px;
-    border: none;
+#quality {
+    width: 100%;
 }
-
-@media (max-width: 1085px) {
 
 .header__h1,
 .title {
@@ -1398,13 +1445,6 @@ width: 75%;
     font-size: 20px;
 }
 
-#values .container{
-    width: 500px;
-}
-
-#values .row{
-    width: 500px;
-}
 
 .values__list {
 flex-direction: column;
@@ -1491,8 +1531,17 @@ body {
 width: 470px;
 }
 
-.row{
-    width: 470px;
+#plan {
+    align-items: center;
+    justify-content: center;
+}
+
+.row {
+    width: 100%;
+}
+
+header {
+    width: 100%;
 }
 
 #header .input-wrapper{
